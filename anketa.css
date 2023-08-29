@@ -1,0 +1,77 @@
+.profile {
+  width: 950px;
+}
+
+.profile-form {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "photo name name name name"
+    "photo job job city city"
+    "photo twitter twitter instagram instagram"
+    "photo about about about about"
+    "photo post post post post"
+    "photo checkbox-1 checkbox-2 checkbox-3 checkbox-4";
+  grid-gap: 15px;
+
+  padding: 15px;
+}
+
+.photo {
+  grid-area: photo;
+
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.name {
+  grid-area: name;
+}
+
+.job {
+  grid-area: job;
+}
+
+.city {
+  grid-area: city;
+}
+
+.twitter {
+  grid-area: twitter;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.about {
+  grid-area: about;
+}
+
+.post {
+  grid-area: post;
+}
+
+.checkbox-1 {
+  grid-area: checkbox-1;
+}
+
+.checkbox-2 {
+  grid-area: checkbox-2;
+}
+
+.checkbox-3 {
+  grid-area: checkbox-3;
+}
+
+.checkbox-4 {
+  grid-area: checkbox-4;
+}
+
+.input {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}

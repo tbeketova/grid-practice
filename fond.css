@@ -1,0 +1,74 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+}
+
+.about-tag {
+  grid-area: 1 / 1 / 2 / 3;
+  /*row start column start row end column end*/
+  margin: 0;
+  padding: 30px 25px;
+  background-color: rgb(173, 173, 221);
+}
+
+.about-lead {
+  /*grid-column: 1 / 2;
+  grid-row: 2 / 3;*/
+  grid-area: 2 / 1 / 3 / 2;
+  padding-left: 25px;
+  background-color: rgb(173, 173, 221);
+  margin: 0;
+}
+
+.about-desc {
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 0 25px 20px 0;
+  margin: 0;
+  background-color: rgb(173, 173, 221);
+}
+
+.about-list {
+  grid-area: 3 / 1 / 4 / 2;
+  list-style: none;
+  margin: 0;
+  background-color: rgb(173, 173, 221);
+}
+
+.about-info-block {
+  list-style: none;
+  grid-area: 4 / 1 / 5/ 2;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.about-button {
+  grid-area: -1 / 1 / -2 / 2;
+  padding: 5px 30px;
+  background-color: rgb(185, 116, 116);
+  width: 250px;
+}
+
+.about-img-container {
+  grid-area: 3 / 2 / 6 / 3;
+}
+
+.about-img-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-controls {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-area: 5 / 2 / 6 / 3;
+}

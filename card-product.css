@@ -1,0 +1,92 @@
+ /*Global*/
+ h2 {
+   text-align: center;
+ }
+
+ .card {
+   width: 320px;
+   margin: 0 auto;
+ }
+
+ .card-content {
+   padding: 0 24px;
+
+ }
+
+ .card-content dl {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 20px;
+ }
+
+ .card-content dd {
+   grid-row: 2 / 3;
+   margin: 0;
+ }
+
+ .card img {
+   width: 100%;
+ }
+
+ /*Berry card плиточная*/
+ .berry-card {
+   max-width: 350px;
+   margin: 0 auto;
+ }
+
+ .berry-card img {
+   width: 350px;
+   height: 340px;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .berry-card {
+   display: grid;
+   grid-template-rows: 200px repeat(3, auto);
+   border: 1px solid rgb(197, 166, 215)
+ }
+
+ .card-stats {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: auto 1fr;
+ }
+
+ .card-stats dt {
+   grid-row: 1 / 2;
+ }
+
+ .card-stats dd {
+   margin: 0;
+ }
+
+ /*Berry card табличная*/
+ .berry-card-table {
+   max-width: 900px;
+   grid-template-columns: 350px 1fr auto;
+   grid-template-rows: auto auto;
+ }
+
+ .berry-card-table img {
+   grid-column: 1 / 2;
+   grid-row: 1 / 3;
+   width: 350px;
+   height: 250px;
+ }
+
+ .berry-card-table .card-info {
+   grid-column: 2 / 3;
+   grid-row: 1 / 2;
+ }
+
+ .berry-card-table .card-stats {
+   grid-column: 2 / 3;
+   grid-row: 2 / 3;
+ }
+
+ .berry-card-table .berry-button {
+   grid-column: 3 / 4;
+   grid-row: 1 / 3;
+ }
